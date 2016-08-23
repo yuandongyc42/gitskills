@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <!--<script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>-->
+
+    <style>
+    </style>
+
+  </head>
+  <body ng-app="webRcTwoApp">
+  <div class="TobBar">
+    <div class="TobBox" id="TobBox">
+      <div class="TobCenter">
+        <!--<a class="aClass">首页</a>-->
+        <!--<a>产品</a>-->
+        <!--<a>价格</a>-->
+        <!--<a>服务</a>-->
+        <!--<a>我们</a>-->
+        <!--<a>伙伴</a>-->
+        <a class="logo"><img src="imgs/logo.png"></a>
+        <a class="aClass" href="#/">首页</a>
+        <a class="aClass" ng-href="#/introduce/introduceIdx">公司介绍</a>
+        <a class="aClass" ng-href="#/loopGroups/loopGroupsIdx">循环团</a>
+        <!--<a ng-href="#/services/serviceIndex">服务</a>-->
+        <a class="aClass" ng-href="#/we/weIndex">联系我们</a>
+        <a class="aClass" ng-href="#/merchants/merchantsIdx">商家入驻</a>
+        <a class="bClass" style="">
+          加入趣欧会员
+        </a>
+      </div>
+    </div>
+  </div>
+
+    <!--<div class="container">-->
+    <!--<div ng-view=""></div>-->
+    <!--</div>-->
+  <div ng-view=""></div>
+
+
+    <div class="footer">
+      <div class="back_logo">
+        <div class="line_logo">
+          <p>合作伙伴</p>
+          <a class="alogo" href="javascript();"><img src="imgs/line_logo/travel-log-5.jpg">德国国家旅游局</a>
+          <a class="alogo" href="javascript();"><img src="imgs/line_logo/travel-log-8.jpg">瑞士国家旅游局</a>
+          <a class="alogo" href="javascript();"><img src="imgs/line_logo/travel-log-10.jpg">意大利国家旅游局</a>
+          <a class="alogo" href="javascript();"><img src="imgs/line_logo/travel-log-12.jpg">西班牙旅游局</a>
+          <a class="alogo" href="javascript();"><img src="imgs/line_logo/logo-footer.gif">瑞士琉森旅游局</a>
+          <a class="alogo" href="javascript();"><img src="imgs/line_logo/2-14040402195M04.gif">法国旅游局</a>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="line_inner">
+          <div class="line_left">
+            <div class="line_div"><a class="ainner" href="javascrpt();">关于趣鸥</a></div>
+            <div class="line_div"><a class="ainner" href="javascrpt();">加入趣鸥</a></div>
+            <div class="line_div"><a class="ainner" href="javascrpt();">新手指南</a></div>
+            <div class="line_div"><a class="ainner" href="javascrpt();">公司资讯</a></div>
+            <div class="line_div"><a class="ainner" href="javascrpt();">联系我们</a></div>
+            <div class="line_div"><a class="ainner" href="javascrpt();">常见问题</a></div>
+          </div>
+          <div class="line_right"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=0wezr9MutlNp1YGDEs2FtVGpc24T2epS"></script>
+        <script src="scripts/directives.js"></script>
+
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/productpag.js"></script>
+        <script src="scripts/controllers/price/priceindex.js"></script>
+        <script src="scripts/controllers/services/serviceindex.js"></script>
+        <script src="scripts/controllers/we/weindex.js"></script>
+        <script src="scripts/controllers/partners/partnerindex.js"></script>
+        <script src="scripts/controllers/introduce/introduceidx.js"></script>
+        <script src="scripts/controllers/loopgroups/loopgroupsidx.js"></script>
+        <script src="scripts/controllers/merchants/merchantsidx.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
+<!--<script type="text/javascript" src="js/scroll.js" ></script>-->
+<!--<script type="text/javascript" src="js/jquery.mousewheel.js" ></script>-->
+
+
+<script>
+  /*function ChangeOpacity(divObj,opacityV) {// 返回被选选项的文本
+    var opacity = opacityV;
+    var el = document.getElementById(divObj);
+    if (el.style.opacity !== undefined) {
+      el.style.opacity = opacity;
+    }
+    else {
+      alert("Your browser doesn't support this example!");
+    }
+  }
+  ChangeOpacity("TobBox",0.8);
+  //ChangeOpacity("TobBox",1);*/
+</script>
