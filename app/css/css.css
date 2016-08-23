@@ -1,0 +1,144 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*html { overflow: hidden; }*/
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td { margin: 0; padding: 0; }
+body { font-family: "微软雅黑"; font-size: 12px; color: #000000; word-wrap: break-word; behavior: url("csshover.htc"); overflow: hidden; }
+button, input, select, textarea { font: 12px/1.5 Arial, "宋体", Helvetica, Verdana, sans-serif; word-wrap: break-word; color: #565756; }
+ul, li { list-style: none; margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; font-size: 100%; }
+img { border: none; border: 0; vertical-align: middle; }
+a { text-decoration: none; outline: none; }
+p { margin: 0; padding: 0; }
+input, select, textarea { vertical-align: middle; *font-size:100%;
+}
+input { margin: 0; outline: none; padding: 0; }
+input::-ms-clear {
+display:none;
+}
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { *zoom:1
+}
+.ddw { position: absolute; left: 0; top: 0; color: #000; font-size: 16px; z-index: 9999; }
+.ddw2 { position: absolute; left: 20px; top: 0; color: #000; font-size: 16px; z-index: 9999; }
+.num_box { position: relative; }
+.num { color: #fff; font-size: 50px; width: 100%; text-align: center; position: relative; }
+.num p { position: absolute; top: 50%; left: -50%; margin-left: -315px; background:rgba(0,0,0,0.5); padding:3px 15px; /*opacity:0.6; filter:alpha(opacity=60)*/ }
+.num ul { width: 100%; position: absolute; left: 0; top: 0; height: 100%; }
+.num ul li { float: left; height: 100%; position: relative; }
+#num_0 { background: url(../imgs/bac1.png) no-repeat center #03F; background-size: 100% 100%; }
+#num_1 { background: url(../imgs/bac2.png) no-repeat center #03F; background-size: 100% 100%; }
+#num_2 { background: url(../imgs/bac3.png) no-repeat center #03F; background-size: 100% 100%; }
+#num_3 { background: url(../imgs/bac1.png) no-repeat center #03F; background-size: 100% 100%; }
+#num_4 { background: url(../imgs/bac2.png) no-repeat center #03F; background-size: 100% 100%; }
+#num_5 { background: url(../imgs/bac3.png) no-repeat center #03F; background-size: 100% 100%; }
+#num_6 { background: #0F0; }
+#num_7 { background: #00F; }
+#num_8 { background: #FF0; }
+#num_9 { background: #F0F; }
+.fixed_r { position: absolute; right: 10px; top: 200px; z-index: 999; }
+.fixed_r li { width: 40px; height: 40px; background: rgba(0,0,0,0.5); border-bottom: 1px solid rgba(255,255,255,0); line-height: 40px; color: white; font-size: 16px; text-align: center; cursor: pointer; }
+/*.fixed_r li.on { background:#C00; color: #fff; }*/
+.fixed_r li.on { background:url(../imgs/bac1.jpg) no-repeat center #03F; background-size: 100% 100%; }
+
+/*.TobBar { position: absolute; left: 10px; top: 0px; z-index: 999; }*/
+/*.TobBar { position: absolute;left: 0px;  right: 0;top: 0px; z-index: 999; }*/
+/*.TobBox { left:0; right: 0; height:100px;border:1px solid #F00}*/
+/*.TobCenter{ top:50px}*/
+.TobBar {position: fixed;width:100%;top: 0;left:0; z-index: 999; background:rgba(0,0,0,0.5);}
+.TobBox { width:100%; height:80px;border:0;}
+/*.TobCenter{ margin:0px auto;width:1000px; height:25px;border:1px solid #cccccc;bottom:0}*/
+.TobCenter{ margin:0 auto;width:1025px; height:80px;cursor: pointer;line-height: 80px }
+
+.TopBox2{ width:100%; height:80px;}
+a{display: inline-block; font-family: "Microsoft YaHei";float: left}
+
+a,a:link,a:visited,a:hover,a:focus,a:active{text-align: center;text-decoration:none;}
+.logo{margin-left: 25px;width: 100px;margin-right: 280px}
+.aClass{width: 100px;font-size: 16px;font-weight: bold;color:white}
+.bClass,.bClass:link,.bClass:visited,.bClass:hover,.bClass:focus,.bClass:active{width: 120px;border: 1px solid white;border-radius:15px;margin: 25px 0;line-height: 28px;font-size: 16px;font-weight: bold;color:white}
+#div1
+{
+    position:absolute;
+    /*---这里定义层不随表格透明而透明
+    这样就可以使表格透明的时候表格里的
+    内容和图片不跟着透明了---*/
+}
+
+/*a:link，定义正常链接的样式；*/
+/*2*/
+/*a:visited，定义已访问过链接的样式；*/
+/*3*/
+/*a:hover，定义鼠标悬浮在链接上时的样式；*/
+/*4*/
+/*a:active，定义鼠标点击链接时的样式。*/
+
+
+.aClass:hover,.aClass:focus,.aClass:active{
+    color: rgb(222,108,40);
+  }
+.footer{padding: 0;background-color: black;font-size: 14px;color: #cccccc;border: 0;text-align: left}
+.container{margin: 0 auto;width: 1025px;max-width: 1025px;padding: 20px}
+.back_logo{width: 100%;background-color: rgb(30,30,30);padding: 30px 0 20px 0;}
+.line_logo{width: 985px;height: 55px;margin: auto}
+.line_logo p{display: inline-block;float: left;color: #cccccc}
+.alogo,.alogo:link,.alogo:visited,.alogo:hover,.alogo:focus,.alogo:active{margin: 0 20px;height: 55px;width: 110px;font-size: 12px;line-height: 25px;color: #cccccc}
+.line_logo img{display: block;width: 110px;height: 30px}
+.line_inner{margin-top: 10px}
+.line_left{width: 840px;display: inline-block;float: left}
+.line_div{display:inline-block;width: 276px;float: left;height: 40px}
+.line_right{border-left: 2px solid rgb(20,20,20);display: inline-block;float: left;height: 60px }
+.ainner,.ainner:link,.ainner:visited,.ainner:hover,.ainner:focus,.ainner:active{color: #cccccc}
+
+/*INTRODUCE*/
+.body{width: 100%}
+.bannerbox{width: 100%;overflow-x: hidden}
+.banner{width: 1000px;margin: auto;display: block;}
+.banner_img{display: block;width: 1920px;margin: auto;margin-left: -460px}
+.aboutus_div{width: 1025px;padding: 40px;margin: auto;}
+.aboutus_title{display: block;margin: auto;margin-bottom: 40px}
+.aboutus_details{width: 1025px;margin: 0;height: 350px;vertical-align :top}
+.aboutus_details_1left{display: inline-block;width: 472px;margin-right: 1px;float:left}
+.aboutus_details_2left{display: inline-block;width: 550px;}
+.aboutus_details_1right{display: inline-block;width: 472px;float:left}
+.aboutus_details_2right{display: inline-block;width: 375px;vertical-align: top}
+.aboutus_details p{font-size: 16px;margin: 20px 0}
+.aboutus_details span{font-size: 24px;line-height: 30px;border: 2px solid rgb(242,111,21);color: rgb(242,111,21);font-weight: bold;border-radius: 20px}
+.backgroundc_229{background-color: rgb(229,229,229)}
+.img_honor{display: inline-block;float: left;width: 206px;margin: 15px;height: 116px;background-color: rgb(153,153,153)}
+.li_title{width: 145px;height: 60px;border-right:2px solid rgb(242,111,21);}
+.clock{position: relative;left: 38px;bottom: 7px}
+.year{margin-bottom: 10px}
+.month{}
+.month span{font-size: 24px;font-weight: bold;color: black;border: 0}
+.month_title{width: 139px;padding-left:40px;display: inline-block;vertical-align :top}
+.ring{float: right;position: relative;left: 22px;bottom: 4px}
+.month_details{display: inline-block;border-left:2px solid rgb(242,111,21);width:400px;padding-left: 20px;padding-bottom: 18px}
+.month p{margin: 0;font-size: 14px;line-height: 18px}
+.border_w{border: white}
+
+/*LOOPGROUPSIDX*/
+.Xback{width: 100%;height: 880px;background: url(../../imgs/loopgroupsidx/background.png) repeat;}
+.Xbox{width: 1025px;margin: 0 auto;padding: 130px 0 50px 30px}
+.Xloop_left{display: inline-block;width: 350px;float: left;}
+.Xguangg{display: block;margin-bottom: 40px}
+.Xline_logo{display: block;width: 305px;height: 48px;margin-bottom: 15px;position: relative}
+.Xline_img{width: 100%;height: 100%;display: inline-block}
+.Xline_name{position: absolute;top: 14px;left:131px }
+.Xline_in{display: block;font-size: 24px;line-height: 48px;width: 250px;height: 48px;border: 1px solid white;border-radius: 24px;margin-top: 135px;color: white}
+.Xline_in:link,.Xline_in:visited,.Xline_in:hover,.Xline_in:focus,.Xline_in:active{color: white;}
+.Xloop_right{display: inline-block;float: left}
+
+/*MERCHANTSIDX*/
+.welcom{display: block;position: absolute;z-index: 100;top: 160px;width: 100%;left: 0}
+.welcom img{display: block;margin: 0 auto}
+.m_title{display: block;margin: 0 auto;padding-top: 20px;}
+.m_div{width: 1025px;padding: 40px 0;margin: auto;height: 300px}
+.m_button{display: inline-block;margin: 0 22px 0 118px;width: 170px;height: 250px;text-align: center;font-weight: bold}
+.m_button span{display: block;position: relative;right: 5px;width: 180px;height: 32px;font-size: 16px;line-height: 28px;color: black;border: 2px solid rgb(183,183,183);border-radius: 16px;margin-top: 20px}
+.m_button:hover span{color: rgb(242,111,21);border: 2px solid rgb(242,111,21);border-radius: 16px;}
+
+/*
+.aClass{
+    color: #ffffff;
+}
+*/
